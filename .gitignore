@@ -1,6 +1,6 @@
-*.o
-*config.h
-*patches.h
-dwm
-st
-dmenu
+*.o*
+config.h*
+patches.h*
+dwm*
+st*
+dmenu*
