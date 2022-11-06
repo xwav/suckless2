@@ -16,8 +16,8 @@ static const int statusmon               = 'A';
 static int tagindicatortype              = INDICATOR_TOP_LEFT_SQUARE;
 static int tiledindicatortype            = INDICATOR_NONE;
 static int floatindicatortype            = INDICATOR_TOP_LEFT_SQUARE;
-static const char *fonts[]               = { "monospace:size=10" };
-static const char dmenufont[]            = "monospace:size=10";
+static const char *fonts[]               = { "monospace:size=13" };
+static const char dmenufont[]            = "monospace:size=13";
 
 static char c000000[]                    = "#000000"; // placeholder value
 
@@ -328,7 +328,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_h,          setmfact,               {.f = -0.05} },
 	{ MODKEY,                       XK_l,          setmfact,               {.f = +0.05} },
 	{ MODKEY|ShiftMask,             XK_Return,     zoom,                   {0} },
-	{ MODKEY,                       XK_Tab,        view,                   {0} },
+	{ MODKEY|ShiftMask,             XK_Tab,        view,                   {0} },
 	{ MODKEY,                       XK_Tab,        shiftview,              { .i = -1 } },
 	{ MODKEY,                       XK_backslash,  shiftview,              { .i = +1 } },
 	{ MODKEY|ShiftMask,             XK_c,          killclient,             {0} },

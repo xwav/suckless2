@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+static char *font = "Monospace:pixelsize=19:antialias=true:autohint=true";
 
 
 static int borderpx = 2;
@@ -101,7 +101,7 @@ unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	/* 8 normal colors */
+	/* 8 normal colors 
 	"black",
 	"red3",
 	"green3",
@@ -111,7 +111,7 @@ static const char *colorname[] = {
 	"cyan3",
 	"gray90",
 
-	/* 8 bright colors */
+	/* 8 bright colors 
 	"gray50",
 	"red",
 	"green",
@@ -123,11 +123,34 @@ static const char *colorname[] = {
 
 	[255] = 0,
 
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#add8e6", /* 256 -> cursor */
-	"#555555", /* 257 -> rev cursor*/
-	"#000000", /* 258 -> bg */
+	/* more colors can be added after 255 to use with DefaultXX 
+	"#add8e6", /* 256 -> cursor 
+	"#555555", /* 257 -> rev cursor
+	"#000000", /* 258 -> bg 
 	"#e5e5e5", /* 259 -> fg */
+
+        "#101057", /* 0 hard contrast: #1d2021 / soft contrast: #32302f */
+	"#e6e6e6", /* 1 light gray */
+	"#98971a", /* 2 khaki color of text*/
+	"#d79921", /* 3 orange */
+	"#000000", /* 4 black */
+	"#b16286", /* 5 raspberry */
+	"#689d6a", /* 6 light green */
+	"#a89984", /* 7 dust */
+	"#928374", /* 8 dust again */
+	"#fb4934", /* 9 bright red */
+	"#b8bb26", /* 10 sand */
+	"#fabd2f",  /* 11 light orange */
+	"#83a598", /* 12 pale blue */
+	"#d3869b", /* 13 rose */
+	"#8ec07c", /* 14 pale green */
+	"#ebdbb2", /* 15 dirt yellow */
+	[255] = 0,
+
+	/* more colors can be added after 255 to use with DefaultXX */
+	"#cccccc", /* dust */
+	"#555555", /*dark grey*/
+
 };
 
 
@@ -135,8 +158,8 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultbg = 258;
-unsigned int defaultfg = 259;
+unsigned int defaultbg = 4;
+unsigned int defaultfg = 5;
 unsigned int defaultcs = 256;
 unsigned int defaultrcs = 257;
 
